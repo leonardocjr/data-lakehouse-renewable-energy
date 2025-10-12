@@ -1,4 +1,4 @@
-# American Renewable Energy Data Lakehouse Platform
+# 🇺⚡American Renewable Energy Data Lakehouse Platform
 
 ## Objective
 Contribute to **UN SDG 7 (Clean and Affordable Energy)** through renewable energy data analysis using Data Lakehouse architecture with specialized collection types.
@@ -108,7 +108,3 @@ Contribute to **UN SDG 7 (Clean and Affordable Energy)** through renewable energ
 **Target 7.1**: Energy access monitoring via World Bank data  
 **Target 7.2**: Renewable growth analysis via EIA/NREL data  
 **Target 7.3**: Efficiency benchmarking via EPA/World Bank data
-
----
-
-**All APIs are 100% free and accessible from Brazil/Portugal**
