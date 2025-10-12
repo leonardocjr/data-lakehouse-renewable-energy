@@ -1,4 +1,4 @@
-# 🇺🇸⚡American Renewable Energy Data Lakehouse Platform
+# ⚡American Renewable Energy Data Lakehouse Platform
 
 ## Objective
 Contribute to **UN SDG 7 (Clean and Affordable Energy)** through renewable energy data analysis using Data Lakehouse architecture with specialized collection types.
