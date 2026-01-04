@@ -1,0 +1,117 @@
+{"timestamp":"2026-01-03T20:49:49.654265Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/eia_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:49:49.678095Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/epa_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:49:49.695217Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/nrel_hook.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:49:50.504581Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-03T20:49:50.506308Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_solar_capacity_factor.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-03T20:49:50.712143Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_solar_capacity_factor.py","lineno":19,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:49:50.712570Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/eia_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:49:50.712775Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/nrel_hook.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:49:50.763669Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:50.764799Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:50.765753Z","level":"info","event":"Current task name:extract_openmeteo","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:50.766522Z","level":"info","event":"Dag name:dag_solar_capacity_factor","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:50.843075Z","level":"info","event":"Fetching weather for AL (1/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:50.844084Z","level":"info","event":"Fetching Open-Meteo data for lat=33.535376, lon=-86.913836","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:51.697902Z","level":"info","event":"Fetching weather for AK (2/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:51.698421Z","level":"info","event":"Fetching Open-Meteo data for lat=62.7486, lon=-152.608676","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:52.287554Z","level":"info","event":"Fetching weather for AZ (3/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:52.288115Z","level":"info","event":"Fetching Open-Meteo data for lat=33.117159, lon=-112.471772","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:52.879345Z","level":"info","event":"Fetching weather for AR (4/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:52.880324Z","level":"info","event":"Fetching Open-Meteo data for lat=34.939357, lon=-90.983778","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:53.464638Z","level":"info","event":"Fetching weather for CA (5/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:53.465485Z","level":"info","event":"Fetching Open-Meteo data for lat=34.958916, lon=-117.882151","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:51.687516Z","level":"info","event":"Fetching weather for CO (6/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:51.688113Z","level":"info","event":"Fetching Open-Meteo data for lat=38.834635, lon=-104.977139","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:52.278052Z","level":"info","event":"Fetching weather for CT (7/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:52.278579Z","level":"info","event":"Fetching Open-Meteo data for lat=41.74728, lon=-72.441915","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:52.866287Z","level":"info","event":"Fetching weather for DE (8/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:52.867136Z","level":"info","event":"Fetching Open-Meteo data for lat=39.233595, lon=-75.637951","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:53.452313Z","level":"info","event":"Fetching weather for DC (9/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:53.453172Z","level":"info","event":"Fetching Open-Meteo data for lat=38.880414, lon=-76.996625","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:54.038874Z","level":"info","event":"Fetching weather for FL (10/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:54.039533Z","level":"info","event":"Fetching Open-Meteo data for lat=28.616677, lon=-82.408162","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:54.624729Z","level":"info","event":"Fetching weather for GA (11/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:54.630650Z","level":"info","event":"Fetching Open-Meteo data for lat=32.025201, lon=-83.540709","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:55.230630Z","level":"info","event":"Fetching weather for HI (12/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:55.231547Z","level":"info","event":"Fetching Open-Meteo data for lat=21.282678, lon=-157.800263","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:56.027936Z","level":"info","event":"Fetching weather for ID (13/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:56.029701Z","level":"info","event":"Fetching Open-Meteo data for lat=42.873463, lon=-115.369572","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:56.621829Z","level":"info","event":"Fetching weather for IL (14/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:56.623424Z","level":"info","event":"Fetching Open-Meteo data for lat=39.519046, lon=-89.146147","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:57.212012Z","level":"info","event":"Fetching weather for IN (15/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:57.213104Z","level":"info","event":"Fetching Open-Meteo data for lat=40.198948, lon=-86.603297","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:57.805107Z","level":"info","event":"Fetching weather for IA (16/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:57.806454Z","level":"info","event":"Fetching Open-Meteo data for lat=41.644616, lon=-92.288606","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:58.397924Z","level":"info","event":"Fetching weather for KS (17/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:58.399158Z","level":"info","event":"Fetching Open-Meteo data for lat=37.584833, lon=-98.482356","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:58.993591Z","level":"info","event":"Fetching weather for KY (18/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:58.995003Z","level":"info","event":"Fetching Open-Meteo data for lat=37.617023, lon=-86.149381","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:59.595264Z","level":"info","event":"Fetching weather for LA (19/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:49:59.596354Z","level":"info","event":"Fetching Open-Meteo data for lat=31.277172, lon=-91.673773","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:00.189271Z","level":"info","event":"Fetching weather for ME (20/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:00.190354Z","level":"info","event":"Fetching Open-Meteo data for lat=44.64288, lon=-69.624668","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:00.777997Z","level":"info","event":"Fetching weather for MD (21/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:00.779286Z","level":"info","event":"Fetching Open-Meteo data for lat=39.024214, lon=-76.517722","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:01.374077Z","level":"info","event":"Fetching weather for MA (22/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:01.375797Z","level":"info","event":"Fetching Open-Meteo data for lat=42.188361, lon=-71.748721","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:01.975006Z","level":"info","event":"Fetching weather for MI (23/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:01.977509Z","level":"info","event":"Fetching Open-Meteo data for lat=42.580095, lon=-84.667578","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:02.564537Z","level":"info","event":"Fetching weather for MN (24/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:02.565764Z","level":"info","event":"Fetching Open-Meteo data for lat=44.999472, lon=-93.794059","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:03.161381Z","level":"info","event":"Fetching weather for MS (25/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:03.162644Z","level":"info","event":"Fetching Open-Meteo data for lat=32.892933, lon=-89.513643","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:03.741402Z","level":"info","event":"Fetching weather for MO (26/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:03.744566Z","level":"info","event":"Fetching Open-Meteo data for lat=39.319415, lon=-91.824117","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:04.335265Z","level":"info","event":"Fetching weather for MT (27/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:04.336305Z","level":"info","event":"Fetching Open-Meteo data for lat=45.644886, lon=-110.658768","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:04.945262Z","level":"info","event":"Fetching weather for NE (28/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:04.948275Z","level":"info","event":"Fetching Open-Meteo data for lat=41.228043, lon=-97.162953","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:05.535463Z","level":"info","event":"Fetching weather for NV (29/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:05.536297Z","level":"info","event":"Fetching Open-Meteo data for lat=36.859089, lon=-115.552158","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:06.120511Z","level":"info","event":"Fetching weather for NH (30/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:06.121469Z","level":"info","event":"Fetching Open-Meteo data for lat=42.811381, lon=-71.501167","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:06.706991Z","level":"info","event":"Fetching weather for NJ (31/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:06.707772Z","level":"info","event":"Fetching Open-Meteo data for lat=40.289397, lon=-74.650535","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:07.356042Z","level":"info","event":"Fetching weather for NM (32/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:07.356857Z","level":"info","event":"Fetching Open-Meteo data for lat=34.823074, lon=-106.807515","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:08.267544Z","level":"info","event":"Fetching weather for NY (33/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:08.268306Z","level":"info","event":"Fetching Open-Meteo data for lat=42.690021, lon=-75.772299","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:08.855394Z","level":"info","event":"Fetching weather for NC (34/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:08.856007Z","level":"info","event":"Fetching Open-Meteo data for lat=35.628145, lon=-78.554265","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:09.453022Z","level":"info","event":"Fetching weather for OH (36/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:09.454266Z","level":"info","event":"Fetching Open-Meteo data for lat=40.003393, lon=-83.58305","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:10.041635Z","level":"info","event":"Fetching weather for OK (37/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:10.042458Z","level":"info","event":"Fetching Open-Meteo data for lat=34.715387, lon=-98.677005","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:10.634416Z","level":"info","event":"Fetching weather for OR (38/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:10.635851Z","level":"info","event":"Fetching Open-Meteo data for lat=44.331273, lon=-120.836607","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:11.228595Z","level":"info","event":"Fetching weather for PA (39/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:11.229338Z","level":"info","event":"Fetching Open-Meteo data for lat=40.299186, lon=-77.878236","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:11.825985Z","level":"info","event":"Fetching weather for RI (40/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:11.827168Z","level":"info","event":"Fetching Open-Meteo data for lat=41.675026, lon=-71.544934","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:12.407749Z","level":"info","event":"Fetching weather for SC (41/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:12.408266Z","level":"info","event":"Fetching Open-Meteo data for lat=33.618603, lon=-80.895816","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:12.992528Z","level":"info","event":"Fetching weather for SD (42/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:12.993275Z","level":"info","event":"Fetching Open-Meteo data for lat=43.721374, lon=-103.020742","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:13.591100Z","level":"info","event":"Fetching weather for TN (43/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:13.591943Z","level":"info","event":"Fetching Open-Meteo data for lat=35.773339, lon=-88.261915","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:14.186451Z","level":"info","event":"Fetching weather for TX (44/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:14.187148Z","level":"info","event":"Fetching Open-Meteo data for lat=31.344456, lon=-98.777248","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:14.784466Z","level":"info","event":"Fetching weather for UT (45/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:14.785390Z","level":"info","event":"Fetching Open-Meteo data for lat=38.893445, lon=-112.337232","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:15.387225Z","level":"info","event":"Fetching weather for VT (46/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:15.388550Z","level":"info","event":"Fetching Open-Meteo data for lat=43.976124, lon=-72.831396","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:15.989388Z","level":"info","event":"Fetching weather for VA (47/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:15.990464Z","level":"info","event":"Fetching Open-Meteo data for lat=37.342826, lon=-77.794618","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:16.592032Z","level":"info","event":"Fetching weather for WA (48/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:16.592718Z","level":"info","event":"Fetching Open-Meteo data for lat=46.229715, lon=-120.199285","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:17.190903Z","level":"info","event":"Fetching weather for WV (49/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:17.191644Z","level":"info","event":"Fetching Open-Meteo data for lat=39.357867, lon=-78.360297","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:17.778670Z","level":"info","event":"Fetching weather for WI (50/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:17.779508Z","level":"info","event":"Fetching Open-Meteo data for lat=43.285105, lon=-89.151219","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:18.374229Z","level":"info","event":"Fetching weather for WY (51/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:18.375000Z","level":"info","event":"Fetching Open-Meteo data for lat=41.256012, lon=-106.641633","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:18.590651Z","level":"info","event":"Done. Returned value was: /opt/airflow/data/raw/openmeteo/openmeteo_2025-12_2025-12.json","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":217}
+{"timestamp":"2026-01-03T20:50:18.591338Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019b859f-5a65-7b4a-af48-ca25479524bd'), task_id='extract_openmeteo', dag_id='dag_solar_capacity_factor', run_id='manual__2026-01-03T20:49:31+00:00', try_number=1, dag_version_id=UUID('019b8529-b4e7-77df-9e90-f348f0458e40'), map_index=-1, hostname='9e3b9db8b326', context_carrier={}, task=<Task(PythonOperator): extract_openmeteo>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2026, 1, 3, 20, 49, 49, 508960, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1370}
+{"timestamp":"2026-01-03T20:50:18.619078Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:18.619589Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:50:18.619969Z","level":"info","event":"Task operator:<Task(PythonOperator): extract_openmeteo>","logger":"task.stdout"}

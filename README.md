@@ -5,9 +5,72 @@ Contribute to **UN SDG 7 (Clean and Affordable Energy)** through renewable energ
 
 ## Overview
 
-**Name**: `renewable-energy-data-lakehouse`  
+**Name**: `renewable-energy-lakehouse`  
 **Theme**: Energy Sustainability Analysis  
 **Alignment**: SDG 7 - Clean and Affordable Energy  
+
+### Technnologies
+- **Apache Airflow**: `3.1.5`
+- **Python**: `3.12.x`
+- **pandas**: `2.2.0` or higher
+- **pyarrow**: `14.0.0` or higher
+- **Operacional**: Linux/macOS (Windows: use WSL2)
+
+⚠️ **IMPORTANT**: Este projeto **NÃO funciona** com Airflow 2.x. Se você tem Airflow 2.x instalado, precisará migrar.
+
+## Project Structure
+
+```
+renewable-energy-pipeline/
+├── .gitignore
+├── README.md
+├── docker-compose.yml
+├── .env                                    # Variáveis de ambiente e API keys
+│
+├── dags/
+│   ├── __init__.py
+│   ├── dag_stream_openmeteo_weather.py     # STREAM - Open Meteo
+│   ├── dag_emission_intensity.py           # BATCH + AGGREGATED - EIA + EPA intensidade de emissões
+│   └── dag_solar_capacity_factor.py        # BATCH + AGGREGATED - EIA + NREL + OpenMeteo fator capacidade solar
+│
+├── plugins/
+│   ├── __init__.py
+│   │
+│   ├── hooks/
+│   │   ├── __init__.py
+│   │   ├── eia_hook.py                     # Hook para EIA API
+│   │   ├── epa_hook.py                     # Hook para EPA API
+│   │   ├── nrel_hook.py                    # Hook para NREL API
+│   │   └── openmeteo_hook.py               # Hook para Open-Meteo API
+│   │
+│   └── custom_operators/
+│   │   ├── __init__.py
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       ├── transformations.py      
+│       ├── state_utils.py
+│       ├── data_helpers.py              
+│       └── solar_transformations.py 
+│
+├── config/
+│   ├── airflow.cfg                         # Configuração customizada do Airflow
+│
+├── logs/                                   # Gerado automaticamente pelo Airflow
+│   └── .gitkeep
+│
+├── data/                                   # Volume montado (bronze/silver/gold)
+│   ├── raw/                                # BRONZE - Dados brutos
+│   │   ├── eia/
+│   │   ├── epa/
+│   │   ├── nrel/
+│   │   └── openmeteo/
+│   │
+│   └── processed/                          # SILVER - Dados processados/transformados
+│
+├── variables/                              # Airflow Variables JSON
+│   └── api_keys.json
+```
 
 ## Public APIs
 
@@ -47,15 +110,6 @@ Contribute to **UN SDG 7 (Clean and Affordable Energy)** through renewable energ
 - **Use**: Correlation emissions vs energy production
 - **Cost**: 100% FREE - No limits
 
-### 5. World Bank Open Data API - **AGGREGATED**
-- **URL**: `https://api.worldbank.org/v2/`
-- **Collection Type**: **AGGREGATED - Development Indicators**
-- **Data**: **UNSTRUCTURED** - Policy reports
-- **Frequency**: AGGREGATED annual/quinquennial | Monthly polling
-- **Volume**: HIGH - 200+ countries, decades of indicators
-- **Use**: Global SDG 7 progress benchmarking
-- **Cost**: 100% FREE - No limits
-
 ## Collection Type Mapping
 
 ### 📁 BATCH (Massive Historical Data)
@@ -69,22 +123,10 @@ Contribute to **UN SDG 7 (Clean and Affordable Energy)** through renewable energ
 
 ### 📊 AGGREGATED (Pre-processed Data)
 - **EPA Envirofacts**: Environmental indicators by region/period
-- **World Bank API**: Development indicators (annual/quinquennial)
-
-## Requirements Compliance
-
-✅ **Multiple sources (4-5)**: 5 specialized public APIs  
-✅ **Diversified sources**: Historical energy, real-time climate, technical, environmental, development  
-✅ **Structured + unstructured data**: JSON + technical PDFs + reports
-✅ **Different types of Data**: String, Float, INT, and more...
-✅ **Massive source**: EIA (20+ years) + Open-Meteo (continuous global data)  
-✅ **Stream/batch/aggregated**
 
 ## Big Data Tools
 
-**Big Data Tools**: Apache Hadoop, HDFS, Apache Spark  
-**Integration**: Apache Airflow with specialized workflows  
-**Exploration**: Apache Kafka, Apache Flink, Spark Streaming, Delta Lake, Apache Iceberg, Apache Hudi
+**Integration**: Apache Airflow with specialized workflows
 
 ## Use Cases by Collection Type
 

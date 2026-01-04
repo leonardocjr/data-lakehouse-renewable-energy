@@ -1,0 +1,37 @@
+{"timestamp":"2026-01-03T22:31:18.910669Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/eia_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T22:31:18.934648Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/epa_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T22:31:18.956888Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/nrel_hook.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T22:31:20.072566Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-03T22:31:20.076311Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_stream_eia_generation.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-03T22:31:20.202108Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_stream_eia_generation.py","lineno":10,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T22:31:20.202559Z","level":"warning","event":"The `airflow.sensors.python.PythonSensor` attribute is deprecated. Please use `'airflow.providers.standard.sensors.python.PythonSensor'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_stream_eia_generation.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T22:31:20.202977Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/eia_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T22:31:20.251355Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:31:20.252406Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:31:20.253216Z","level":"info","event":"Current task name:check_new_month","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:31:20.253969Z","level":"info","event":"Dag name:dag_stream_eia_generation","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:31:20.253191Z","level":"info","event":"Poking callable: <function check_new_month_available at 0x73461d2a2340>","logger":"airflow.task.operators.airflow.providers.standard.sensors.python.PythonSensor","filename":"python.py","lineno":75}
+{"timestamp":"2026-01-03T22:31:20.267162Z","level":"info","event":"[INFO] Auto-detected target month: 2025-11","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:31:20.268064Z","level":"info","event":"[INFO] Incremental period: 2026-01 to 2025-11","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:31:20.268852Z","level":"info","event":"[INFO] No new months to process","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:32:15.543519Z","level":"info","event":"Poking callable: <function check_new_month_available at 0x73461d2a2340>","logger":"airflow.task.operators.airflow.providers.standard.sensors.python.PythonSensor","filename":"python.py","lineno":75}
+{"timestamp":"2026-01-03T22:32:15.549361Z","level":"info","event":"[INFO] Auto-detected target month: 2025-11","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:32:15.549730Z","level":"info","event":"[INFO] Incremental period: 2026-01 to 2025-11","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:32:15.550026Z","level":"info","event":"[INFO] No new months to process","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:33:10.824975Z","level":"info","event":"Poking callable: <function check_new_month_available at 0x73461d2a2340>","logger":"airflow.task.operators.airflow.providers.standard.sensors.python.PythonSensor","filename":"python.py","lineno":75}
+{"timestamp":"2026-01-03T22:33:10.830353Z","level":"info","event":"[INFO] Auto-detected target month: 2025-11","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:33:10.830861Z","level":"info","event":"[INFO] Incremental period: 2026-01 to 2025-11","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:33:10.831290Z","level":"info","event":"[INFO] No new months to process","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:34:06.117179Z","level":"info","event":"Poking callable: <function check_new_month_available at 0x73461d2a2340>","logger":"airflow.task.operators.airflow.providers.standard.sensors.python.PythonSensor","filename":"python.py","lineno":75}
+{"timestamp":"2026-01-03T22:34:06.122943Z","level":"info","event":"[INFO] Auto-detected target month: 2025-11","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:34:06.123214Z","level":"info","event":"[INFO] Incremental period: 2026-01 to 2025-11","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:34:06.123370Z","level":"info","event":"[INFO] No new months to process","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:35:01.413386Z","level":"info","event":"Poking callable: <function check_new_month_available at 0x73461d2a2340>","logger":"airflow.task.operators.airflow.providers.standard.sensors.python.PythonSensor","filename":"python.py","lineno":75}
+{"timestamp":"2026-01-03T22:35:01.416045Z","level":"info","event":"[INFO] Auto-detected target month: 2025-11","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:35:01.416576Z","level":"info","event":"[INFO] Auto-detected target month: 2025-11","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:35:01.416896Z","level":"info","event":"[INFO] Incremental period: 2025-11 to 2025-11","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:35:01.417174Z","level":"info","event":"[INFO] New month(s) available: 2025-11 to 2025-11","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:35:01.439044Z","level":"info","event":"Success criteria met. Exiting.","logger":"airflow.task.operators.airflow.providers.standard.sensors.python.PythonSensor","filename":"sensor.py","lineno":250}
+{"timestamp":"2026-01-03T22:35:01.454336Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:35:01.454739Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:35:01.455032Z","level":"info","event":"Task operator:<Task(PythonSensor): check_new_month>","logger":"task.stdout"}

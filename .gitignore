@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Airflow runtime artifacts
+airflow/logs/
+airflow/*.pid
+airflow/*.db
+
+# Local data outputs
+data/raw/
+data/processed/
+data/warehouse/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+airflow/.env

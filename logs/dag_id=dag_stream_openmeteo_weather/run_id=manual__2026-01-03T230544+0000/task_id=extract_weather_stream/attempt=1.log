@@ -1,0 +1,29 @@
+{"timestamp":"2026-01-03T23:05:48.474604Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/eia_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T23:05:48.489587Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/epa_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T23:05:48.502449Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/nrel_hook.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T23:05:49.274250Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-03T23:05:49.276030Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_stream_openmeteo_weather.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-03T23:05:49.326419Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_stream_openmeteo_weather.py","lineno":10,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T23:05:49.361717Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.362461Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.362891Z","level":"info","event":"Current task name:extract_weather_stream","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.363175Z","level":"info","event":"Dag name:dag_stream_openmeteo_weather","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.365128Z","level":"info","event":"[INFO] Period: 2025-12-27 to 2026-01-02","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.365760Z","level":"info","event":"[INFO] Extracting weather: 2025-12-27 to 2026-01-02","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.366090Z","level":"info","event":"[INFO] Locations: 5","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.366443Z","level":"info","event":"[INFO] Fetching CA (California)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.366831Z","level":"info","event":"Fetching Open-Meteo data for lat=36.7783, lon=-119.4179","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.637653Z","level":"info","event":"[INFO] Fetching TX (Texas)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.638373Z","level":"info","event":"Fetching Open-Meteo data for lat=31.9686, lon=-99.9018","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.709559Z","level":"info","event":"[INFO] Fetching NY (New York)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.710313Z","level":"info","event":"Fetching Open-Meteo data for lat=42.1657, lon=-74.9481","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.782451Z","level":"info","event":"[INFO] Fetching FL (Florida)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.783215Z","level":"info","event":"Fetching Open-Meteo data for lat=27.9944, lon=-81.7603","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.855988Z","level":"info","event":"[INFO] Fetching AZ (Arizona)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.856665Z","level":"info","event":"Fetching Open-Meteo data for lat=34.0489, lon=-111.0937","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.953803Z","level":"info","event":"[INFO] Updated /opt/airflow/data/raw/openmeteo/weather_stream_latest.json with 5 locations","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:49.956427Z","level":"info","event":"Done. Returned value was: /opt/airflow/data/raw/openmeteo/weather_stream_latest.json","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":217}
+{"timestamp":"2026-01-03T23:05:49.956906Z","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019b861c-1419-71f1-ab2d-ee2a8fe049c1'), task_id='extract_weather_stream', dag_id='dag_stream_openmeteo_weather', run_id='manual__2026-01-03T23:05:44+00:00', try_number=1, dag_version_id=UUID('019b8619-8f2b-724d-9af1-940d2eded1b5'), map_index=-1, hostname='9e3b9db8b326', context_carrier={}, task=<Task(PythonOperator): extract_weather_stream>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=2, start_date=datetime.datetime(2026, 1, 3, 23, 5, 48, 332034, tzinfo=datetime.timezone.utc), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task","filename":"task_runner.py","lineno":1370}
+{"timestamp":"2026-01-03T23:05:50.002267Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:50.003150Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-03T23:05:50.003978Z","level":"info","event":"Task operator:<Task(PythonOperator): extract_weather_stream>","logger":"task.stdout"}

@@ -1,0 +1,21 @@
+{"timestamp":"2026-01-03T22:29:33.459599Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/eia_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T22:29:33.483300Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/epa_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T22:29:33.504191Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/nrel_hook.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T22:29:35.042542Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-03T22:29:35.045896Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_stream_eia_generation.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-03T22:29:35.183388Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_stream_eia_generation.py","lineno":10,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T22:29:35.183988Z","level":"warning","event":"The `airflow.sensors.python.PythonSensor` attribute is deprecated. Please use `'airflow.providers.standard.sensors.python.PythonSensor'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_stream_eia_generation.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T22:29:35.184375Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/eia_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T22:29:35.275299Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:29:35.276364Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:29:35.277337Z","level":"info","event":"Current task name:check_new_month","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:29:35.278303Z","level":"info","event":"Dag name:dag_stream_eia_generation","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:29:35.279266Z","level":"info","event":"[INFO] Auto-detected target month: 2025-12","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:29:35.279995Z","level":"info","event":"[INFO] Auto-detected target month: 2025-12","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:29:35.280784Z","level":"info","event":"[INFO] Incremental period: 2025-12 to 2025-12","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:29:35.277344Z","level":"info","event":"Poking callable: <function check_new_month_available at 0x73463dc2db20>","logger":"airflow.task.operators.airflow.providers.standard.sensors.python.PythonSensor","filename":"python.py","lineno":75}
+{"timestamp":"2026-01-03T22:29:35.282619Z","level":"info","event":"[INFO] New month(s) available: 2025-12 to 2025-12","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:29:35.342150Z","level":"info","event":"Success criteria met. Exiting.","logger":"airflow.task.operators.airflow.providers.standard.sensors.python.PythonSensor","filename":"sensor.py","lineno":250}
+{"timestamp":"2026-01-03T22:29:35.389591Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:29:35.390625Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-01-03T22:29:35.391479Z","level":"info","event":"Task operator:<Task(PythonSensor): check_new_month>","logger":"task.stdout"}

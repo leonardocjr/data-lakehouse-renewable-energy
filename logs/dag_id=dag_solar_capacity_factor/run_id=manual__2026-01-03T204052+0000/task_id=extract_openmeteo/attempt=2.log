@@ -1,0 +1,57 @@
+{"timestamp":"2026-01-03T20:46:17.352645Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/eia_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:46:17.367464Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/epa_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:46:17.382572Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/nrel_hook.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:46:17.397689Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/openmeteo_hook.py","lineno":8,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:46:18.202602Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-01-03T20:46:18.204514Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/dag_solar_capacity_factor.py","logger":"airflow.models.dagbag.DagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-01-03T20:46:18.322071Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/dags/dag_solar_capacity_factor.py","lineno":19,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:46:18.322401Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/eia_hook.py","lineno":12,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:46:18.322573Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/nrel_hook.py","lineno":11,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:46:18.322671Z","level":"warning","event":"The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.","category":"DeprecatedImportWarning","filename":"/opt/airflow/plugins/hooks/openmeteo_hook.py","lineno":8,"logger":"py.warnings"}
+{"timestamp":"2026-01-03T20:46:18.355342Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:18.356269Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:18.356852Z","level":"info","event":"Current task name:extract_openmeteo","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:18.357437Z","level":"info","event":"Dag name:dag_solar_capacity_factor","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:18.405640Z","level":"info","event":"Fetching weather for AL (1/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:19.235879Z","level":"info","event":"Fetching weather for AK (2/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:20.046998Z","level":"info","event":"Fetching weather for AZ (3/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:20.836885Z","level":"info","event":"Fetching weather for AR (4/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:21.640549Z","level":"info","event":"Fetching weather for CA (5/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:22.428344Z","level":"info","event":"Fetching weather for CO (6/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:23.210208Z","level":"info","event":"Fetching weather for CT (7/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:24.439528Z","level":"info","event":"Fetching weather for DE (8/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:25.238321Z","level":"info","event":"Fetching weather for DC (9/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:26.020735Z","level":"info","event":"Fetching weather for FL (10/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:26.835810Z","level":"info","event":"Fetching weather for GA (11/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:27.615151Z","level":"info","event":"Fetching weather for HI (12/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:28.413925Z","level":"info","event":"Fetching weather for ID (13/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:29.216978Z","level":"info","event":"Fetching weather for IL (14/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:39.804906Z","level":"info","event":"Failed to fetch weather for IL: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/archive?latitude=39.519046&longitude=-89.146147&hourly=temperature_2m%2Cdirect_radiation%2Ccloudcover&timezone=UTC&start_date=2025-12-01&end_date=2025-12-31 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:39.805731Z","level":"info","event":"Fetching weather for IN (15/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:38.238999Z","level":"info","event":"Fetching weather for IA (16/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:39.052549Z","level":"info","event":"Fetching weather for KS (17/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:39.853289Z","level":"info","event":"Fetching weather for KY (18/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:50.386416Z","level":"info","event":"Failed to fetch weather for KY: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/archive?latitude=37.617023&longitude=-86.149381&hourly=temperature_2m%2Cdirect_radiation%2Ccloudcover&timezone=UTC&start_date=2025-12-01&end_date=2025-12-31 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:50.387094Z","level":"info","event":"Fetching weather for LA (19/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:51.203486Z","level":"info","event":"Fetching weather for ME (20/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:52.004258Z","level":"info","event":"Fetching weather for MD (21/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:46:52.796550Z","level":"info","event":"Fetching weather for MA (22/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:03.336070Z","level":"info","event":"Failed to fetch weather for MA: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/archive?latitude=42.188361&longitude=-71.748721&hourly=temperature_2m%2Cdirect_radiation%2Ccloudcover&timezone=UTC&start_date=2025-12-01&end_date=2025-12-31 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:03.337638Z","level":"info","event":"Fetching weather for MI (23/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:04.114962Z","level":"info","event":"Fetching weather for MN (24/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:04.894490Z","level":"info","event":"Fetching weather for MS (25/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:05.706718Z","level":"info","event":"Fetching weather for MO (26/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:06.522474Z","level":"info","event":"Fetching weather for MT (27/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:14.789643Z","level":"info","event":"Failed to fetch weather for MT: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/archive?latitude=45.644886&longitude=-110.658768&hourly=temperature_2m%2Cdirect_radiation%2Ccloudcover&timezone=UTC&start_date=2025-12-01&end_date=2025-12-31 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:14.790946Z","level":"info","event":"Fetching weather for NE (28/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:15.572987Z","level":"info","event":"Fetching weather for NV (29/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:16.360214Z","level":"info","event":"Fetching weather for NH (30/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:17.147663Z","level":"info","event":"Fetching weather for NJ (31/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:17.938480Z","level":"info","event":"Fetching weather for NM (32/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:27.991774Z","level":"error","event":"Server indicated the task shouldn't be running anymore. Terminating process","detail":{"detail":{"reason":"not_running","message":"TI is no longer in the running state and task should terminate","current_state":"failed"}},"logger":"task"}
+{"timestamp":"2026-01-03T20:47:28.481598Z","level":"info","event":"Failed to fetch weather for NM: HTTPSConnectionPool(host='archive-api.open-meteo.com', port=443): Max retries exceeded with url: /v1/archive?latitude=34.823074&longitude=-106.807515&hourly=temperature_2m%2Cdirect_radiation%2Ccloudcover&timezone=UTC&start_date=2025-12-01&end_date=2025-12-31 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:28.482490Z","level":"info","event":"Fetching weather for NY (33/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:29.317408Z","level":"info","event":"Fetching weather for NC (34/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:30.103798Z","level":"info","event":"Fetching weather for OH (36/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:30.910977Z","level":"info","event":"Fetching weather for OK (37/51)","logger":"task.stdout"}
+{"timestamp":"2026-01-03T20:47:33.028187Z","level":"error","event":"Task killed!","logger":"task"}
